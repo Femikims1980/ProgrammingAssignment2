@@ -13,9 +13,7 @@ makeCacheMatrix <- function(x = matrix(rnorm(12),3,3,3)) {
     getInverse <- function() inv
     list(set = set, get = get, setInverse = setInverse, getInverse = getInverse)
 }
-
 ## Below computes the inverse of the matrix above
-
 cacheSolve <- function(x = matrix(rnorm(12),3,3,3)) {
         ## Return a matrix that is the inverse of 'x'
     inv <- x$getInverse()
